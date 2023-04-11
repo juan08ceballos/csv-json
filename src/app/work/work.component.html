@@ -1,0 +1,10 @@
+<div>
+    <input type="file" (change)="onFileSelect($event)">
+  </div>
+  <button (click)="copyJson()">Copiar JSON compacto</button>
+  
+  <div *ngIf="jsonData.length">
+    <h3>JSON Data:</h3>
+    <pre>{{ jsonData | json }}</pre>
+  </div>
+
